@@ -1,10 +1,5 @@
-# vlcj-swt
-Support classes for vlcj to use an SWT Composite as a video surface in a vlcj EmbeddedMediaPlayer.
-
-This project provides a new factory, SwtMediaPlayerFactory, that can be used to create a new
-CompositeVideoSurface.
-
-This video surface can then be attached to a standard vlcj EmbeddedMediaPlayer with no further changes.
+# vlcj-swt-swing
+Demo showing how to embed a vlcj media player inside an SWT component, inside a Swing application.
 
 You may still need various boiler-plate in your own application to embed the video component correctly
 in an SWT application (e.g. to create a Shell with an event loop and so on).
