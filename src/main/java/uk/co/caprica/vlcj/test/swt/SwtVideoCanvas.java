@@ -1,4 +1,4 @@
-package uk.co.caprica.vlcjswt;
+package uk.co.caprica.vlcj.test.swt;
 
 import java.awt.Canvas;
 
@@ -35,14 +35,11 @@ public class SwtVideoCanvas extends Canvas {
                         shell.setLayout(new FillLayout());
 
                         synchronized (this) {
-                            // swtBrowser = new Browser(shell, SWT.NONE);
                             composite = new Composite(shell, SWT.EMBEDDED | SWT.NO_BACKGROUND);
                             composite.setLayout(new GridLayout(1, true));
                             composite.setLayoutData(new GridData(GridData.FILL_BOTH));
                             Color black = display.getSystemColor(SWT.COLOR_BLUE);
                             composite.setBackground(black);
-
-//                            System.out.println("COMPOSITE EMBEDDED HANDLE " + composite.embeddedHandle);
 
                             this.notifyAll();
                         }
@@ -94,4 +91,5 @@ public class SwtVideoCanvas extends Canvas {
     public Composite getVideoSurface() {
         return composite;
     }
+
 }
